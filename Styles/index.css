@@ -1,0 +1,20 @@
+#override-bootstrap {
+  background: linear-gradient(0.25turn, #f8edeb, #ffe5d9);
+}
+
+.navbar {
+  margin-bottom: 2%;
+  width: 100%;
+  background: inherit;
+  border-radius: 5%;
+}
+
+.nav-link {
+  color: grey;
+  font-size: 2rem;
+  padding-left: 5rem !important;
+}
+
+.nav-link a:hover {
+  color: black;
+}
