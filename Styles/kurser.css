@@ -1,3 +1,26 @@
-html {
-    background: #fae1dd;
+.page-content {
+    width: 100%;
+}
+
+.title {
+    text-align: center;
+    margin: 4% auto;
+}
+
+.col {
+    width: 50%;
+}
+
+.card {
+    margin: 0 auto;
+    width: 60%;
+    background: linear-gradient(0.25turn, #fcd5ce, #d8e2dc);
+}
+
+.card-img-top {
+    width: 100%;
+}
+
+button {
+    margin-top: 1%;
 }

@@ -1,12 +1,15 @@
 #override-bootstrap {
   background: linear-gradient(0.25turn, #f8edeb, #ffe5d9);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .navbar {
-  margin-bottom: 2%;
+  padding-bottom: 0%;
   width: 100%;
   background: inherit;
-  border-radius: 5%;
+  box-shadow: 0px 5px 15px grey;
+  padding-top: 0%;
+  height: 5.5rem;
 }
 
 .nav-link {

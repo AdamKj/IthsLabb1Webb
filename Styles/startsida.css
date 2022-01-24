@@ -1,3 +1,12 @@
+.page-title {
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.page-content {
+    margin-top: 5%;
+}
+
 .row {
     width: 100%;
 }
@@ -5,13 +14,15 @@
 .column {
     width: 33%;
     height: 100%;
+    margin: 0 auto;
 }
 
 .info {
     border: 1px solid black;
-    float: right;
     width: 80%;
+    height: 100%;
     text-align: center;
+    margin: 0 auto;
 }
 .title {
     margin-bottom: 4%;
@@ -43,9 +54,10 @@
 }
 
 .question {
-    margin-left: 18%;
-    font-size: 3rem;
+    width: 60%;
+    font-size: 2rem;
     text-align: center;
+    margin: 4% auto;
 }
 
 .link {
@@ -53,9 +65,16 @@
     color: orange;
 }
 
+.question a:hover {
+    color: rgb(146, 95, 0);
+}
+
 .image {
     margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
     border-radius: 10%;
     box-shadow: 2px 2px 15px 15px grey;
-    width: 100%;
+    width: 80%;
 }
