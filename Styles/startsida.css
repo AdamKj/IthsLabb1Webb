@@ -1,26 +1,23 @@
+@media screen {
+    #override-bootstrap, .page-content {
+        width: 100%;
+    }
+}
+
 .page-title {
     text-align: center;
     margin-bottom: 5%;
 }
 
-.page-content {
+.container {
+    max-width: 100%;
     margin-top: 5%;
-}
-
-.row {
-    width: 100%;
-}
-
-.column {
-    width: 33%;
-    height: 100%;
-    margin: 0 auto;
 }
 
 .info {
     border: 1px solid black;
     width: 80%;
-    height: 100%;
+    height: auto;
     text-align: center;
     margin: 0 auto;
 }

@@ -3,6 +3,12 @@
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+@media screen{
+  #override-bootstrap {
+    width: 100%;
+  }
+}
+
 .navbar {
   padding-bottom: 0%;
   width: 100%;
