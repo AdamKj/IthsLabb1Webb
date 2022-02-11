@@ -1,0 +1,34 @@
+[
+    {
+        "kursnummer": 1238,
+        "kurstitel": "Grundläggande HTML5",
+        "kursbeskrivning": "Kort kursinfo...",
+        "kurslängd": "25p",
+        "kurspris": "199kr",
+        "kursbildurl": "https://i.imgur.com/DQj0xkp.jpeg"
+    },
+    {
+        "kursnummer": 4536,
+        "kurstitel": "Grundläggande CSS",
+        "kursbeskrivning": "Kort kursinfo...",
+        "kurslängd": "20p",
+        "kurspris": "199kr",
+        "kursbildurl": "https://i.imgur.com/DQj0xkp.jpeg"
+    },
+    {
+        "kursnummer": 3458,
+        "kurstitel": "JavaScript ES6",
+        "kursbeskrivning": "Kort kursinfo...",
+        "kurslängd": "50p",
+        "kurspris": "299kr",
+        "kursbildurl": "https://i.imgur.com/DQj0xkp.jpeg"
+    },
+    {
+        "kursnummer": 3876,
+        "kurstitel": "Backend C#",
+        "kursbeskrivning": "Kort kursinfo...",
+        "kurslängd": "60p",
+        "kurspris": "349kr",
+        "kursbildurl": "https://i.imgur.com/DQj0xkp.jpeg"
+    }
+]
