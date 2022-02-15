@@ -20,7 +20,7 @@ function populateList(input) {
     <div class="col">
         <div class="card">
           <img
-            src="https://thumbs.dreamstime.com/b/people-library-persons-reading-books-sitting-chair-students-studying-college-knowledge-university-library-people-151404232.jpg"
+            src=${courses.kursbildurl}
             class="card-img-top" alt="..." />
           <div class="card-body">
             <div class="shop-item">
@@ -29,8 +29,7 @@ function populateList(input) {
               <p class="card-text">
                 ${courses.kursbeskrivning}
                 <p class="shop-item-price">${courses.kurspris}</p>
-                <button type="button" class="btn btn-add btn-primary" data-bs-toggle="modal"
-                  data-bs-target="#reg-modal">
+                <button type="button" class="btn btn-add btn-primary">
                   Lägg i kundkorg
                 </button>
               </p>
@@ -40,6 +39,11 @@ function populateList(input) {
         </div>
         `;
     document.getElementById("courses").innerHTML += content;
+  }
+  var addToCartButton = document.getElementsByClassName("btn-add");
+  for (var i = 0; i < addToCartButton.length; i++) {
+    var button = addToCartButton[i];
+    button.addEventListener("click", addToCart);
   }
 }
 

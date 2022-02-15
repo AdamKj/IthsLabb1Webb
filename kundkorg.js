@@ -6,7 +6,6 @@ if (document.readyState == "loading") {
 
 function ready() {
   var removeCartItem = document.getElementsByClassName("btn-add");
-  console.log(removeCartItem);
   for (var i = 0; i < removeCartItem.length; i++) {
     var button = removeCartItem[i];
     button.addEventListener("click", removeCartItem);
@@ -30,7 +29,7 @@ function ready() {
 }
 
 function purchaseClicked() {
-  alert("Fixa en modal som tackar att man handlat");
+  alert("Tack för att du handlat!");
   var cartItems = document.getElementsByClassName("cart-items")[0];
   while (cartItems.hasChildNodes()) {
     cartItems.removeChild(cartItems.firstChild);

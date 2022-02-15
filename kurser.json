@@ -5,7 +5,7 @@
         "kursbeskrivning": "Kort kursinfo...",
         "kurslängd": "25p",
         "kurspris": "199kr",
-        "kursbildurl": "https://i.imgur.com/DQj0xkp.jpeg"
+        "kursbildurl": "./Images/HTML.png"
     },
     {
         "kursnummer": 4536,
@@ -13,7 +13,7 @@
         "kursbeskrivning": "Kort kursinfo...",
         "kurslängd": "20p",
         "kurspris": "199kr",
-        "kursbildurl": "https://i.imgur.com/DQj0xkp.jpeg"
+        "kursbildurl": "./Images/css.png"
     },
     {
         "kursnummer": 3458,
@@ -21,7 +21,7 @@
         "kursbeskrivning": "Kort kursinfo...",
         "kurslängd": "50p",
         "kurspris": "299kr",
-        "kursbildurl": "https://i.imgur.com/DQj0xkp.jpeg"
+        "kursbildurl": "./Images/js2.png"
     },
     {
         "kursnummer": 3876,
@@ -29,6 +29,6 @@
         "kursbeskrivning": "Kort kursinfo...",
         "kurslängd": "60p",
         "kurspris": "349kr",
-        "kursbildurl": "https://i.imgur.com/DQj0xkp.jpeg"
+        "kursbildurl":  "./Images/C-Sharp.png"
     }
 ]

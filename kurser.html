@@ -13,7 +13,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
   <script src="./kundkorg.js" async></script>
-  <script src="./kurser.js" async></script>
+  <script src="./kurser.js"></script>
   <link rel="stylesheet" href="/Styles/index.css" />
   <link rel="stylesheet" href="/Styles/kurser.css" />
   <title>Våra Kurser</title>
@@ -47,100 +47,23 @@
   </header>
   <div class="page-content">
     <h1 class="title">Här kan du se alla kurser vi erbjuder! &#x1F60A;</h1>
-    <section class="container content-section ms-auto">
-      <div class="cart-card">
-        <h3 class="cart-title">Din kundkorg</h3>
-        <div class="cart-items">
+    <div class="row">
+      <section class="container content-section ms-auto">
+        <div class="cart-card">
+          <h3 class="cart-title">Din kundkorg</h3>
+          <div class="cart-items">
+          </div>
+          <div class="cart-total">
+            <strong class="cart-total-title">Summa: </strong>
+            <span class="cart-total-price">0kr</span>
+          </div>
+          <div class="btn-done">
+            <button class="btn btn-success btn-purchase" type="button">Köp</button></div>
         </div>
-        <div class="cart-total">
-          <strong class="cart-total-title">Summa: </strong>
-          <span class="cart-total-price">0kr</span>
-        </div>
-        <div class="btn-done">
-          <button class="btn btn-success btn-purchase" type="button">Köp</button></div>
-      </div>
-    </section>
-
+      </section>
+    </div>
     <div class="row row-cols-1 row-cols-md-2 g-4" id="courses">
-      <!-- <div class="card">
-          <img
-            src="https://thumbs.dreamstime.com/b/people-library-persons-reading-books-sitting-chair-students-studying-college-knowledge-university-library-people-151404232.jpg"
-            class="card-img-top" alt="..." />
-          <div class="card-body">
-            <div class="shop-item">
-              <h5 class="shop-item-title">Kursnamn 1</h5>
-              <p class="course-length"><b>25p</b></p>
-              <p class="card-text">
-                Kort information om kursen...
-                <p class="shop-item-price">199kr</p>
-                <button type="button" class="btn btn-add btn-primary" data-bs-toggle="modal"
-                  data-bs-target="#reg-modal">
-                  Lägg i kundkorg
-                </button>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div> -->
-      <!-- <div class="col">
-        <div class="card">
-          <img
-            src="https://thumbs.dreamstime.com/b/students-study-desk-young-teens-studying-laptop-computer-teamwork-college-school-pensive-guys-prepare-examination-vector-187925595.jpg"
-            class="card-img-top" alt="..." />
-          <div class="card-body">
-            <div class="shop-item">
-              <h5 class="shop-item-title">Kursnamn 2</h5>
-              <p class="card-text">
-                Kort information om kursen...
-                <p class="shop-item-price">299kr</p>
-                <button type="button" class="btn btn-add btn-primary" data-bs-toggle="modal"
-                  data-bs-target="#reg-modal">
-                  Lägg i kundkorg
-                </button>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card">
-          <img
-            src="https://thumbs.dreamstime.com/b/college-university-students-researchers-professors-studying-together-education-research-concept-vector-illustration-flat-144636319.jpg"
-            class="card-img-top" alt="..." />
-          <div class="card-body">
-            <div class="shop-item">
-              <h5 class="shop-item-title">Kursnamn 3</h5>
-              <p class="card-text">
-                Kort information om kursen...
-                <p class="shop-item-price">499kr</p>
-                <button type="button" class="btn btn-add btn-primary" data-bs-toggle="modal"
-                  data-bs-target="#reg-modal">
-                  Lägg i kundkorg
-                </button>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card">
-          <img src="https://www.pathwayscollege.org/wp-content/uploads/2018/09/PC_0006_sep30.jpg" class="card-img-top"
-            alt="..." />
-          <div class="card-body">
-            <div class="shop-item">
-              <h5 class="shop-item-title">Kursnamn 4</h5>
-              <p class="card-text">
-                Kort information om kursen...
-                <p class="shop-item-price">399kr</p>
-                <button type="button" class="btn btn-add btn-primary" data-bs-toggle="modal"
-                  data-bs-target="#reg-modal">
-                  Lägg i kundkorg
-                </button>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div> -->
+
     </div>
     <div class="row">
       <div class="footer">
