@@ -46,6 +46,38 @@
     </nav>
   </header>
   <div class="page-content">
+    <button id="modal-button">Lägg till ny kurs</button>
+    <div id="course-modal" class="modal" tabindex="-1" role="dialog" aria-labelledby="modalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Lägg till ny kurs</h5>
+          </div>
+          <div class="modal-body">
+            <form action="/" method="post" id="new-course">
+              <p class="course-content">Kursnummer</p>
+              <input type="text" id="course-number" required>
+              <p class="course-content">Kurstitel</p>
+              <input type="text" id="course-title" required>
+              <p class="course-content">Kursinfo</p>
+              <input type="text" id="course-info" required>
+              <p class="course-content">Kurslängd</p>
+              <input type="text" id="course-length" required>
+              <p class="course-content">Kurspris</p>
+              <input type="text" id="course-price" required>
+              <br>
+              <input type="file" class="file" id="attachment" style="display: none;" onchange="fileSelected(this)" />
+              <input type="button" class="file" id="btnAttachment" onclick="openAttachment()" value="Lägg till bild" />
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal" id="close-btn">Stäng</button>
+            <button type="submit" class="btn btn-primary" id="add-course">Lägg till ny
+              kurs</button>
+          </div>
+        </div>
+      </div>
+    </div>
     <h1 class="title">Här kan du se alla kurser vi erbjuder! &#x1F60A;</h1>
     <div class="row">
       <section class="container content-section ms-auto">
@@ -72,6 +104,23 @@
       </div>
     </div>
   </div>
+  <script>
+    var modal = document.getElementById("course-modal");
+    var modalBtn = document.getElementById("modal-button");
+    var closeBtn = document.getElementById("close-btn");
+    var addBtn = document.getElementById("add-course");
+    modalBtn.onclick = function () {
+      modal.style.display = "block";
+    }
+    closeBtn.onclick = function () {
+      modal.style.display = "none";
+    }
+    addBtn.onclick = function () {
+      addCourse();
+      alert("Du har lag till kursen!")
+      modal.style.display = "none";
+    }
+  </script>
 </body>
 
 </html>
