@@ -57,27 +57,27 @@ fetch(jsonReq)
     populateList(courses);
   });
 
-function addCourse() {
-  const courseNumber = document.getElementById("course-number").value;
-  const courseTitle = document.getElementById("course-title").value;
-  const courseInfo = document.getElementById("course-info").value;
-  const courseLength = document.getElementById("course-length").value;
-  const coursePrice = document.getElementById("course-price").value;
-  const courseImg = document.getElementById("btnAttachment").value;
+function addCourse(num, title, info, length, price, img) {
+  num = document.getElementById("course-number").value;
+  title = document.getElementById("course-title").value;
+  info = document.getElementById("course-info").value;
+  length = document.getElementById("course-length").value;
+  price = document.getElementById("course-price").value;
+  img = document.getElementById("btnAttachment").value;
 
   let content = `
     <div class="col">
         <div class="card">
           <img
-            src="${courseImg}"
+            src="${img}"
             class="card-img-top" alt="..." id="course-img" />
           <div class="card-body">
             <div class="shop-item">
-              <h5 class="shop-item-title">${courseTitle}</h5>
-              <p class="course-length"><b>${courseLength}</b></p>
+              <h5 class="shop-item-title">${title}</h5>
+              <p class="course-length"><b>${length}</b></p>
               <p class="card-text">
-                ${courseInfo}
-                <p class="shop-item-price">${coursePrice}</p>
+                ${info}
+                <p class="shop-item-price">${price}</p>
                 <button type="button" class="btn btn-add btn-primary">
                   Lägg i kundkorg
                 </button>
@@ -93,6 +93,14 @@ function addCourse() {
     var button = addToCartButton[i];
     button.addEventListener("click", addToCart);
   }
+}
+
+function emptyValues() {
+  document.getElementById("course-number").value = "";
+  document.getElementById("course-title").value = "";
+  document.getElementById("course-info").value = "";
+  document.getElementById("course-length").value = "";
+  document.getElementById("course-price").value = "";
 }
 
 function openAttachment() {
