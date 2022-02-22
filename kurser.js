@@ -65,7 +65,7 @@ function addCourse(num, title, info, length, price, img) {
   price = document.getElementById("course-price").value;
   img = document.getElementById("btnAttachment").value;
 
-  alert("Du har lagt till kursen!");
+  alert("Success! Kursen har blivit tillagd.");
   let content = `
     <div class="col">
         <div class="card">
@@ -94,9 +94,6 @@ function addCourse(num, title, info, length, price, img) {
     var button = addToCartButton[i];
     button.addEventListener("click", addToCart);
   }
-  var modal = document.getElementById("course-modal");
-  var addBtn = document.getElementById("add-course");
-  addBtn.onclick = modal.style.display = "none";
 }
 
 function emptyValues() {
@@ -105,6 +102,27 @@ function emptyValues() {
   document.getElementById("course-info").value = "";
   document.getElementById("course-length").value = "";
   document.getElementById("course-price").value = "";
+}
+
+function canAddCourse() {
+  document.getElementById("add-course").onclick = function () {
+    var modal = document.getElementById("course-modal");
+    let allAreFilled = true;
+    document
+      .getElementById("new-course")
+      .querySelectorAll("[required]")
+      .forEach(function (i) {
+        if (!allAreFilled) return;
+        if (!i.value) {
+          allAreFilled = false;
+          return;
+        }
+      });
+    if (!allAreFilled) return;
+    addCourse();
+    emptyValues();
+    modal.style.display = "none";
+  };
 }
 
 function openAttachment() {
