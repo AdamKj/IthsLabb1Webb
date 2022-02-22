@@ -57,21 +57,19 @@ fetch(jsonReq)
     populateList(courses);
   });
 
-function addCourse(num, title, info, length, price, img) {
+function addCourse(num, title, info, length, price) {
   num = document.getElementById("course-number").value;
   title = document.getElementById("course-title").value;
   info = document.getElementById("course-info").value;
   length = document.getElementById("course-length").value;
   price = document.getElementById("course-price").value;
-  img = document.getElementById("btnAttachment").value;
 
   alert("Success! Kursen har blivit tillagd.");
   let content = `
     <div class="col">
         <div class="card">
           <img
-            src="${img}"
-            class="card-img-top" alt="..." id="course-img" />
+            class="card-img-top" src="#" alt="..." id="course-img" />
           <div class="card-body">
             <div class="shop-item">
               <h5 class="shop-item-title">${title}</h5>
@@ -102,6 +100,7 @@ function emptyValues() {
   document.getElementById("course-info").value = "";
   document.getElementById("course-length").value = "";
   document.getElementById("course-price").value = "";
+  document.getElementById("course-img").value = "";
 }
 
 function canAddCourse() {
@@ -125,10 +124,17 @@ function canAddCourse() {
   };
 }
 
-function openAttachment() {
-  document.getElementById("attachment").click();
-}
+function fileSelected() {
+  document.getElementById("course-img").onchange = function (evt) {
+    var tgt = evt.target || window.event.src,
+      files = tgt.files;
 
-function fileSelected(input) {
-  document.getElementById("btnAttachment").value = input.files[0].name;
+    if (FileReader && files && files.length) {
+      var fr = new FileReader();
+      fr.onload = function () {
+        document.getElementById("course-img").src = fr.result;
+      };
+      fr.readAsDataURL(files[0]);
+    }
+  };
 }

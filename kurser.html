@@ -20,6 +20,7 @@
     />
     <script src="./kundkorg.js" async></script>
     <script src="./kurser.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <link rel="stylesheet" href="/Styles/index.css" />
     <link rel="stylesheet" href="/Styles/kurser.css" />
     <title>Våra Kurser</title>
@@ -74,7 +75,7 @@
             <div class="modal-header">
               <h5 class="modal-title">Lägg till ny kurs</h5>
             </div>
-            <form id="new-course" name="form" onsubmit="return false">
+            <form id="new-course" onsubmit="return false">
               <div class="modal-body">
                 <p class="course-content">Kursnummer</p>
                 <input type="text" id="course-number" required />
@@ -91,15 +92,8 @@
                   type="file"
                   class="file"
                   id="attachment"
-                  style="display: none"
-                  onchange="fileSelected(this)"
-                />
-                <input
-                  type="button"
-                  class="file"
-                  id="btnAttachment"
-                  onclick="openAttachment()"
-                  value="Lägg till bild"
+                  onchange="fileSelected()"
+                  required
                 />
               </div>
               <div class="modal-footer">
