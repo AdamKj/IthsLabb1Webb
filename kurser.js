@@ -65,6 +65,7 @@ function addCourse(num, title, info, length, price, img) {
   price = document.getElementById("course-price").value;
   img = document.getElementById("btnAttachment").value;
 
+  alert("Du har lagt till kursen!");
   let content = `
     <div class="col">
         <div class="card">
@@ -93,6 +94,9 @@ function addCourse(num, title, info, length, price, img) {
     var button = addToCartButton[i];
     button.addEventListener("click", addToCart);
   }
+  var modal = document.getElementById("course-modal");
+  var addBtn = document.getElementById("add-course");
+  addBtn.onclick = modal.style.display = "none";
 }
 
 function emptyValues() {
