@@ -57,19 +57,21 @@ fetch(jsonReq)
     populateList(courses);
   });
 
-function addCourse(num, title, info, length, price) {
+function addCourse(num, title, info, length, price, img) {
   num = document.getElementById("course-number").value;
   title = document.getElementById("course-title").value;
   info = document.getElementById("course-info").value;
   length = document.getElementById("course-length").value;
   price = document.getElementById("course-price").value;
+  img = document.getElementById("course-img").value;
+  var courseImg = new URL(img);
 
   alert("Success! Kursen har blivit tillagd.");
   let content = `
     <div class="col">
         <div class="card">
           <img
-            class="card-img-top" src="#" alt="..." id="course-img" />
+            class="card-img-top" src="${courseImg}" alt="..." id="newCourse-img" />
           <div class="card-body">
             <div class="shop-item">
               <h5 class="shop-item-title">${title}</h5>
@@ -121,20 +123,5 @@ function canAddCourse() {
     addCourse();
     emptyValues();
     modal.style.display = "none";
-  };
-}
-
-function fileSelected() {
-  document.getElementById("course-img").onchange = function (evt) {
-    var tgt = evt.target || window.event.src,
-      files = tgt.files;
-
-    if (FileReader && files && files.length) {
-      var fr = new FileReader();
-      fr.onload = function () {
-        document.getElementById("course-img").src = fr.result;
-      };
-      fr.readAsDataURL(files[0]);
-    }
   };
 }
