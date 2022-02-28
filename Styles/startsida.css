@@ -1,6 +1,9 @@
-@media screen {
+@media (max-width: 600px) {
     #override-bootstrap, .page-content {
         width: 100%;
+    }
+    .inner-list {
+        font-size: 1.25rem;
     }
 }
 
